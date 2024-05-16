@@ -79,6 +79,7 @@ initiad tx mstaking create-validator \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
     --commission-max-change-rate="0.01"
+    --fees 30000uinit
 ```
 
 Validator'unuzu [explorer](https://scan.testnet.initia.xyz/initiation-1) adresinden kontrol edebilirsiniz.
@@ -86,14 +87,15 @@ Validator'unuzu [explorer](https://scan.testnet.initia.xyz/initiation-1) adresin
 Örnek Komut:
 ```bash
 initiad tx mstaking create-validator \
-    --amount="1000000uinit" \
+    --amount="20000000uinit" \
     --pubkey=$(initiad tendermint show-validator) \
     --moniker="robodehritest13" \
     --chain-id="initiation-1" \
-    --from="robodehritest2" \
+    --from="robodehrimain" \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
     --commission-max-change-rate="0.01"
+    --fees 30000uinit
 ```
 
 
@@ -195,19 +197,21 @@ initiad tx mstaking create-validator \\
     --commission-rate="0.10" \\
     --commission-max-rate="0.20" \\
     --commission-max-change-rate="0.01"
+    --fees 30000uinit
 ```
 
 You can check your validator from [explorer](https://scan.testnet.initia.xyz/initiation-1).
 
 Example Command:
 ```bash
-initiad tx mstaking create-validator \\
-    --amount="1000000uinit" \\
-    --pubkey=$(initiad tendermint show-validator) \\
-    --moniker="robodehritest13" \\
-    --chain-id="initiation-1" \\
-    --from="robodehritest2" \\
-    --commission-rate="0.10" \\
-    --commission-max-rate="0.20" \\
+initiad tx mstaking create-validator \
+    --amount="20000000uinit" \
+    --pubkey=$(initiad tendermint show-validator) \
+    --moniker="robodehritest13" \
+    --chain-id="initiation-1" \
+    --from="robodehrimain" \
+    --commission-rate="0.10" \
+    --commission-max-rate="0.20" \
     --commission-max-change-rate="0.01"
+    --fees 30000uinit
 ```
