@@ -143,6 +143,8 @@ Environment="LD_LIBRARY_PATH=/root/.initia/cosmovisor/current/bin"
 [Install]
 WantedBy=multi-user.target
 EOF
+systemctl daemon-reload
+systemctl restart initiad
 else
     echo "Cosmovisor is already installed."
 fi
