@@ -1,5 +1,7 @@
 # Initia 
 
+Video: https://www.youtube.com/watch?v=M1WrZEFylzQ&feature=youtu.be
+
 ## Önkoşullar
 
 * CPU: 4 çekirdek
