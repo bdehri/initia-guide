@@ -109,7 +109,7 @@ EOF
     systemctl stop initiad
 
     initiad tendermint unsafe-reset-all --home $HOME/.initia --keep-addr-book
-    curl -o - -L https://snapshots.polkachu.com/testnet-snapshots/initia/initia_141999.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/.initia
+    curl -o - -L https://snapshots.polkachu.com/testnet-snapshots/initia/initia_150902.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/.initia
 
     systemctl start initiad
 fi
