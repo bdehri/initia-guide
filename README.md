@@ -80,7 +80,7 @@ initiad tx mstaking create-validator \
     --from="<anahtar_adı>" \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
-    --commission-max-change-rate="0.01"
+    --commission-max-change-rate="0.01" \
     --fees 30000uinit
 ```
 
@@ -96,7 +96,7 @@ initiad tx mstaking create-validator \
     --from="robodehrimain" \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
-    --commission-max-change-rate="0.01"
+    --commission-max-change-rate="0.01" \
     --fees 30000uinit
 ```
 
@@ -190,15 +190,15 @@ Wait until Catching Up: false
 4. Create Validator
 
 ```bash
-initiad tx mstaking create-validator \\
-    --amount="1000000uinit" \\
-    --pubkey=$(initiad tendermint show-validator) \\
-    --moniker="<moniker>" \\
-    --chain-id="initiation-1" \\
-    --from="<key_name>" \\
-    --commission-rate="0.10" \\
-    --commission-max-rate="0.20" \\
-    --commission-max-change-rate="0.01"
+initiad tx mstaking create-validator \
+    --amount="1000000uinit" \
+    --pubkey=$(initiad tendermint show-validator) \
+    --moniker="<moniker>" \
+    --chain-id="initiation-1" \
+    --from="<key_name>" \
+    --commission-rate="0.10" \
+    --commission-max-rate="0.20" \
+    --commission-max-change-rate="0.01" \
     --fees 30000uinit
 ```
 
@@ -214,6 +214,6 @@ initiad tx mstaking create-validator \
     --from="robodehrimain" \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
-    --commission-max-change-rate="0.01"
+    --commission-max-change-rate="0.01" \
     --fees 30000uinit
 ```
