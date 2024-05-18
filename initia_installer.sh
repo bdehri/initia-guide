@@ -29,7 +29,7 @@ then
     echo "Initia is not installed. Installing..."
     git clone https://github.com/initia-labs/initia.git
     cd initia
-    TAG=v0.2.12
+    TAG=v0.2.14
     git checkout $TAG
     make install
 else
