@@ -117,7 +117,7 @@ fi
 if ! command -v cosmovisor &> /dev/null
 then
     echo "Cosmovisor is not installed. Installing..."
-    export DAEMON_HOME=~/.initia
+    export DAEMON_HOME=$HOME/.initia
     export DAEMON_NAME=initiad
     go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@latest
     cosmovisor init /root/go/bin/initiad 
